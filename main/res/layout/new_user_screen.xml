@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF4081">
+    <TextView
+        android:id="@+id/NewUserScreenHeader"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Create new account"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:textColor="#000"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/NewUserScreenHeader"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="#fff">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/txtNewEmail"
+            android:text=" Enter your Email"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"/>
+        <EditText
+            android:layout_marginTop="20dp"
+            android:id="@+id/inputNewEmail"
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@id/txtNewEmail"
+            android:hint="enter your email address.."
+            android:textSize="12sp"
+            android:gravity="center" />
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/txtEnterNewPassword"
+            android:text=" Enter your Password"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@id/inputNewEmail"/>
+        <EditText
+            android:id="@+id/inputNewPassword"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:inputType="textPassword"
+            android:hint="enter your email address.."
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_below="@id/txtEnterNewPassword"
+            />
+        <Button
+            android:id="@+id/createAccountButton"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Create my account"
+            android:layout_below="@id/inputNewPassword"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/txtAlreadyHave"
+            android:text="Already have an account?"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@id/createAccountButton"/>
+        <Button
+            android:id="@+id/goToLoginButton"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Go to login"
+            android:layout_below="@id/txtAlreadyHave"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>
